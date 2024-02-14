@@ -13,6 +13,7 @@ int rows, columns;
 
 // Colors 
 JSONArray palettes;
+int paletteIndex = 1;
 
 void setup() {
   // basic setup
@@ -53,14 +54,14 @@ void setup() {
   }
 
   // colors setup
-  palettes = loadJSONArray("palettes.json");
   colorMode(HSB,360,100,100,255);
-  changePalette(0);
   noFill();
+  palettes = loadJSONArray("palettes.json");
+  changePalette(paletteIndex);
 }
 
 void draw() {
-  //background(backgroundColor);
+  background(getBackgroundColor(paletteIndex));
   for (int i = 0; i < tiles.length; i++) {
     tiles[i].update();
     tiles[i].display();
@@ -70,7 +71,7 @@ void draw() {
 void receiveMessage (int pressed, String buttonName) {
   buttonFeedBask(buttonName);
   if (buttonName.equals("button0")) {
-    changePalette(newPaletteIndex());
+    changePalette(paletteIndex);
   }
   if (buttonName.equals("button1")) {
     fill(0, 255, 0);
@@ -91,23 +92,53 @@ void buttonFeedBask (String name) {
   println(name, "pressed");
 }
 
-//void getColors(int index) {
-  
-//}
+color getBackgroundColor(int index) {
+  JSONObject chosenPalette = palettes.getJSONObject(index);
+  JSONObject backgroundColor = chosenPalette.getJSONObject("background");
+  int backgroundHue = backgroundColor.getInt("hue");
+  int backgroundSaturation = backgroundColor.getInt("saturation");
+  int backgroundBrightness = backgroundColor.getInt("brightness");
+  return color(backgroundHue, backgroundSaturation, backgroundBrightness);
+}
 
-void changePalette(int index) {
+color getInnerColor(int index) {
   JSONObject chosenPalette = palettes.getJSONObject(index);
   JSONObject innerCurve = chosenPalette.getJSONObject("innerCurve");
   int innerHue = innerCurve.getInt("hue");
   int innerSaturation = innerCurve.getInt("saturation");
   int innerBrightness = innerCurve.getInt("brightness");
-  color innerColor = color(innerHue, innerSaturation, innerBrightness);
-  for (int i = 0; i < tiles.length; i++) {
-    // tiles[i].getNewColors(innerColor, middleColor, outterColor);
-  }
+  return color(innerHue, innerSaturation, innerBrightness);
 }
 
-int newPaletteIndex() {
-  return floor(random(14));
-} 
+color getMiddleColor(int index) {
+  JSONObject chosenPalette = palettes.getJSONObject(index);
+  JSONObject middleCurve = chosenPalette.getJSONObject("middleCurve");
+  int middleHue = middleCurve.getInt("hue");
+  int middleSaturation = middleCurve.getInt("saturation");
+  int middleBrightness = middleCurve.getInt("brightness");
+  return color(middleHue, middleSaturation, middleBrightness);
+}
+
+color getOuterColor(int index) {
+  JSONObject chosenPalette = palettes.getJSONObject(index);
+  JSONObject outerCurve = chosenPalette.getJSONObject("outerCurve");
+  int outerHue = outerCurve.getInt("hue");
+  int outerSaturation = outerCurve.getInt("saturation");
+  int outerBrightness = outerCurve.getInt("brightness");
+  return color(outerHue, outerSaturation, outerBrightness);
+}
+
+void changePalette(int index) {
+  color innerColor = getInnerColor(index);
+  color middleColor = getMiddleColor(index);
+  color outerColor = getOuterColor(index);
+  for (int i = 0; i < tiles.length; i++) {
+    tiles[i].getNewColors(innerColor, middleColor , outerColor );
+  }
+  newPaletteIndex();
+}
   
+void newPaletteIndex() {
+  paletteIndex =  floor(random(palettes.size()));
+  println("palette index:", paletteIndex);
+}
