@@ -1,0 +1,310 @@
+[
+  {
+    "background": {
+      "hue": 118,
+      "saturation": 58,
+      "brightness": 52
+    },
+    "innerCurve": {
+      "hue": 27,
+      "saturation": 98,
+      "brightness": 100
+    },
+    "middleCurve": {
+      "hue": 0,
+      "saturation": 100,
+      "brightness": 95
+    },
+    "outerCurve": {
+      "hue": 350,
+      "saturation": 97,
+      "brightness": 76
+    }
+  },
+  {
+    "background": {
+      "hue": 38,
+      "saturation": 92,
+      "brightness": 98
+    },
+    "innerCurve": {
+      "hue": 24,
+      "saturation": 100,
+      "brightness": 100
+    },
+    "middleCurve": {
+      "hue": 9,
+      "saturation": 90,
+      "brightness": 96
+    },
+    "outerCurve": {
+      "hue": 356,
+      "saturation": 84,
+      "brightness": 93
+    }
+  },
+  {
+    "background": {
+      "hue": 164,
+      "saturation": 41,
+      "brightness": 77
+    },
+    "innerCurve": {
+      "hue": 52,
+      "saturation": 33,
+      "brightness": 90
+    },
+    "middleCurve": {
+      "hue": 14,
+      "saturation": 78,
+      "brightness": 92
+    },
+    "outerCurve": {
+      "hue": 360,
+      "saturation": 65,
+      "brightness": 81
+    }
+  },
+  {
+    "background": {
+      "hue": 185,
+      "saturation": 100,
+      "brightness": 69
+    },
+    "innerCurve": {
+      "hue": 18,
+      "saturation": 28,
+      "brightness": 42
+    },
+    "middleCurve": {
+      "hue": 355,
+      "saturation": 60,
+      "brightness": 80
+    },
+    "outerCurve": {
+      "hue": 14,
+      "saturation": 81,
+      "brightness": 92
+    }
+  },
+  {
+    "background": {
+      "hue": 46,
+      "saturation": 75,
+      "brightness": 93
+    },
+    "innerCurve": {
+      "hue": 10,
+      "saturation": 66,
+      "brightness": 85
+    },
+    "middleCurve": {
+      "hue": 350,
+      "saturation": 65,
+      "brightness": 75
+    },
+    "outerCurve": {
+      "hue": 336,
+      "saturation": 40,
+      "brightness": 33
+    }
+  },
+  {
+    "background": {
+      "hue": 183,
+      "saturation": 47,
+      "brightness": 64
+    },
+    "innerCurve": {
+      "hue": 43,
+      "saturation": 36,
+      "brightness": 86
+    },
+    "middleCurve": {
+      "hue": 28,
+      "saturation": 92,
+      "brightness": 98
+    },
+    "outerCurve": {
+      "hue": 1,
+      "saturation": 90,
+      "brightness": 97
+    }
+  },
+  {
+    "background": {
+      "hue": 0,
+      "saturation": 13,
+      "brightness": 30
+    },
+    "innerCurve": {
+      "hue": 0,
+      "saturation": 75,
+      "brightness": 77
+    },
+    "middleCurve": {
+      "hue": 23,
+      "saturation": 100,
+      "brightness": 100
+    },
+    "outerCurve": {
+      "hue": 45,
+      "saturation": 100,
+      "brightness": 90
+    }
+  },
+  {
+    "background": {
+      "hue": 57,
+      "saturation": 72,
+      "brightness": 95
+    },
+    "innerCurve": {
+      "hue": 201,
+      "saturation": 55,
+      "brightness": 19
+    },
+    "middleCurve": {
+      "hue": 353,
+      "saturation": 97,
+      "brightness": 99
+    },
+    "outerCurve": {
+      "hue": 37,
+      "saturation": 90,
+      "brightness": 98
+    }
+  },
+  {
+    "background": {
+      "hue": 311,
+      "saturation": 76,
+      "brightness": 29
+    },
+    "innerCurve": {
+      "hue": 339,
+      "saturation": 80,
+      "brightness": 74
+    },
+    "middleCurve": {
+      "hue": 32,
+      "saturation": 98,
+      "brightness": 91
+    },
+    "outerCurve": {
+      "hue": 49,
+      "saturation": 100,
+      "brightness": 100
+    }
+  },
+  {
+    "background": {
+      "hue": 283,
+      "saturation": 48,
+      "brightness": 17
+    },
+    "innerCurve": {
+      "hue": 350,
+      "saturation": 89,
+      "brightness": 95
+    },
+    "middleCurve": {
+      "hue": 60,
+      "saturation": 54,
+      "brightness": 92
+    },
+    "outerCurve": {
+      "hue": 134,
+      "saturation": 51,
+      "brightness": 89
+    }
+  },
+  {
+    "background": {
+      "hue": 150,
+      "saturation": 38,
+      "brightness": 80
+    },
+    "innerCurve": {
+      "hue": 42,
+      "saturation": 21,
+      "brightness": 60
+    },
+    "middleCurve": {
+      "hue": 3,
+      "saturation": 98,
+      "brightness": 100
+    },
+    "outerCurve": {
+      "hue": 33,
+      "saturation": 87,
+      "brightness": 98
+    }
+  },
+  {
+    "background": {
+      "hue": 220,
+      "saturation": 56,
+      "brightness": 37
+    },
+    "innerCurve": {
+      "hue": 207,
+      "saturation": 57,
+      "brightness": 89
+    },
+    "middleCurve": {
+      "hue": 206,
+      "saturation": 57,
+      "brightness": 98
+    },
+    "outerCurve": {
+      "hue": 207,
+      "saturation": 57,
+      "brightness": 79
+    }
+  },
+  {
+    "background": {
+      "hue": 40,
+      "saturation": 71,
+      "brightness": 94
+    },
+    "innerCurve": {
+      "hue": 28,
+      "saturation": 100,
+      "brightness": 24
+    },
+    "middleCurve": {
+      "hue": 172,
+      "saturation": 26,
+      "brightness": 72
+    },
+    "outerCurve": {
+      "hue": 42,
+      "saturation": 78,
+      "brightness": 95
+    }
+  },
+  {
+    "background": {
+      "hue": 263,
+      "saturation": 80,
+      "brightness": 49
+    },
+    "innerCurve": {
+      "hue": 213,
+      "saturation": 78,
+      "brightness": 65
+    },
+    "middleCurve": {
+      "hue": 171,
+      "saturation": 78,
+      "brightness": 65
+    },
+    "outerCurve": {
+      "hue": 82,
+      "saturation": 67,
+      "brightness": 70
+    }
+  }
+]
