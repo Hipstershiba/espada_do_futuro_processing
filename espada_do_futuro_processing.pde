@@ -17,8 +17,8 @@ int paletteIndex = 1;
 
 void setup() {
   // basic setup
-  size(900, 900);
-  // fullScreen();
+   size(1080, 900);
+  fullScreen(2);
   frameRate(60);
 
   // osc setup
