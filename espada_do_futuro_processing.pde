@@ -7,7 +7,7 @@ OscP5 osc;
 Tile[] tiles;
 
 int minTileSize = 60;
-int maxTileSize = 1000;
+int maxTileSize = 200;
 float tileSize;
 int rows, columns;
 
@@ -17,7 +17,7 @@ int paletteIndex = 1;
 
 void setup() {
   // basic setup
-   size(1080, 900);
+  //  size(900, 900);
   fullScreen(2);
   frameRate(60);
 
@@ -30,16 +30,17 @@ void setup() {
   osc.plug(this, "receiveMessage", "/button4");
 
   // tiles setup
-  for (int i = minTileSize; i <= maxTileSize; i++) {
-    if (width %  i== 0 && height % i == 0) {
-      println(i);
-      tileSize = i;
-      break;
-    }
-  }
+  // for (int i = minTileSize; i <= maxTileSize; i++) {
+  //   if (width % i == 0 && height % i == 0) {
+  //     println(i);
+  //     tileSize = i;
+  //     break;
+  //   }
+  // }
 
-  columns = floor(width / tileSize);
-  rows = floor(height / tileSize);
+  rows = 12;
+  tileSize = height / rows;
+  columns = ceil(width / tileSize);
   // columns = 1;
   // rows = 4;
   int totalTiles = rows * columns;
@@ -62,7 +63,7 @@ void setup() {
 
 void draw() {
   // ToDo: draw the background in the tile class
-  background(getBackgroundColor(paletteIndex));
+  // background(getBackgroundColor(paletteIndex));
   for (int i = 0; i < tiles.length; i++) {
     tiles[i].update();
     tiles[i].display();
