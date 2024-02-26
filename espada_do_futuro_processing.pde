@@ -61,6 +61,7 @@ void setup() {
 }
 
 void draw() {
+  // ToDo: draw the background in the tile class
   background(getBackgroundColor(paletteIndex));
   for (int i = 0; i < tiles.length; i++) {
     tiles[i].update();
